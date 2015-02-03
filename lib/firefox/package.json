@@ -1,13 +1,13 @@
 {
-  "title": "Flint Web Discovery Addon",
-  "name": "flint-web-discovery",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "author": "Manson Li",
-  "engines": {
-    "firefox": ">=33.0a1",
-    "fennec": ">=33.0a1"
-  },
-  "license": "Apache License 2.0"
+    "license": "Apache License 2.0",
+    "description": "",
+    "engines": {
+        "firefox": ">=33.0a1", 
+        "fennec": ">=33.0a1"
+    }, 
+    "author": "Manson Li", 
+    "title": "Flint Web Discovery Addon", 
+    "version": "0.0.1", 
+    "main": "index.js", 
+    "name": "flint-web-discovery"
 }
