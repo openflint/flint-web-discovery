@@ -1,0 +1,17 @@
+{
+  "name": "flint-web-discovery",
+  "version": "0.1.0",
+  "dependencies": {
+    "eventemitter3": "^0.1.5"
+  },
+  "devDependencies": {
+    "coffeeify": "^0.7.0",
+    "expect.js": "*",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.0.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-coffeeify": "^0.1.3",
+    "grunt-contrib-coffee": "^0.12.0",
+    "mocha": "*"
+  }
+}
