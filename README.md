@@ -7,4 +7,4 @@
     not supported
 
 ## chrome app
-    not supported
+    supported
