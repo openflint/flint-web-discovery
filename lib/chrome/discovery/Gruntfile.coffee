@@ -7,7 +7,7 @@ module.exports = (grunt) ->
         browserify:
             discovery:
                 files:
-                    'out/FlintDeviceManager.js': ['lib/exports.coffee']
+                    'out/flint_discovery.js': ['lib/exports.coffee']
                 options:
                     transform: ['coffeeify']
                     browserifyOptions:

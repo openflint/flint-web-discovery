@@ -5,7 +5,7 @@
     "manifest_version": 2,
     "app": {
         "background": {
-            "scripts": ["js/discovery/FlintDeviceManager.js", "js/background/background.js"]
+            "scripts": ["js/discovery/flint_discovery.js", "js/background/background.js"]
         }
     },
     "icons": {

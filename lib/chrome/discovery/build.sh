@@ -2,5 +2,5 @@
 
 grunt
 
-rm -rf ../app/js/discovery/FlintDeviceManager.js
-cp out/FlintDeviceManager.js ../app/js/discovery/
+rm -rf ../app/js/discovery/flint_discovery.js
+cp out/flint_discovery.js ../app/js/discovery/
