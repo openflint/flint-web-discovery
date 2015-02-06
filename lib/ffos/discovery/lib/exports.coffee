@@ -1,0 +1,1 @@
+window.FlintDeviceManager = require './FlintDeviceManager'

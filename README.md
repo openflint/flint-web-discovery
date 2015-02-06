@@ -9,6 +9,9 @@
 * ### firefox addon
     * copy firefox/discovery/ into your firefox addon project, and include FlintDeviceManager.js in your code
     * sample addon: firefox/addon/
+
+* ### firefox os app
+    * copy ffos/discovery/out/flint_discovery.js into your chrome app project, and inclucde flint_discovery.js in your code
     
 ## API
 
