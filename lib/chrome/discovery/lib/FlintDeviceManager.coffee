@@ -21,6 +21,7 @@ SSDPManager = require './SSDPManager'
 class FlintDeviceManager extends EventEmitter
 
     constructor: ->
+        @found = false
         @devices = {}
         @ssdpManager = new SSDPManager()
         @ssdpManager.on 'devicefound', (uniqueId, device) =>
@@ -28,6 +29,14 @@ class FlintDeviceManager extends EventEmitter
                 @_onDeviceFound uniqueId, device
             else
                 @devices[uniqueId].triggerTimer()
+        setTimeout (=>
+            if not @found
+                console.log 'cannot find device in 10s, stop SSDPManager'
+                @stop()
+                setTimeout (=>
+                    console.log 'cannot find device in 10s, restart SSDPManager'
+                    @start() ), 3 * 1000
+        ), 10 * 1000
 
     _onDeviceFound: (uniqueId, device) ->
         _device = new FlintDevice(device)
@@ -35,6 +44,7 @@ class FlintDeviceManager extends EventEmitter
         _device.on 'devicegone', (_uniqueId) =>
             @_onDeviceGone _uniqueId
         @emit 'devicefound', _device.toJson()
+        @found = true
 
     _onDeviceGone: (uniqueId) ->
         if @devices[uniqueId]
